@@ -1,0 +1,261 @@
+[1mdiff --git a/src/Jdk8/CompareKeyofMap.java b/src/Jdk8/CompareKeyofMap.java[m
+[1mdeleted file mode 100644[m
+[1mindex bdbd85c..0000000[m
+[1m--- a/src/Jdk8/CompareKeyofMap.java[m
+[1m+++ /dev/null[m
+[36m@@ -1,47 +0,0 @@[m
+[31m-package collectionPrac;[m
+[31m-[m
+[31m-import java.util.HashMap;[m
+[31m-import java.util.Set;[m
+[31m-[m
+[31m-public class CompareKeyofMap {[m
+[31m-[m
+[31m-	public static void main(String[] args) {[m
+[31m-		// TODO Auto-generated method stub[m
+[31m-[m
+[31m-		HashMap<String, Integer> hm = new HashMap<>();[m
+[31m-		hm.put("A", 1);[m
+[31m-		hm.put("B", 2);[m
+[31m-		hm.put("C", 3);[m
+[31m-[m
+[31m-		HashMap<String, Integer> hm2 = new HashMap<>();[m
+[31m-		hm2.put("A", 1);[m
+[31m-		hm2.put("C", 3);[m
+[31m-		hm2.put("B", 2);[m
+[31m-[m
+[31m-		HashMap<String, Integer> hm3 = new HashMap<>();[m
+[31m-		hm3.put("A", 1);[m
+[31m-		hm3.put("C", 3);[m
+[31m-		hm3.put("B", 2);[m
+[31m-		hm3.put("D", 4);[m
+[31m-		  [m
+[31m-		Set<String>ss= hm.keySet();[m
+[31m-		System.out.println("KEYs"+ss);[m
+[31m-		[m
+[31m-		if(hm.keySet().equals(hm2.keySet())) {[m
+[31m-			System.out.println("Keys are same");[m
+[31m-		}[m
+[31m-		else[m
+[31m-		{[m
+[31m-			System.err.println("Keys are not same ");[m
+[31m-		}[m
+[31m-		if(hm.keySet().equals(hm3.keySet())) {[m
+[31m-			System.out.println("Keys are same");[m
+[31m-		}[m
+[31m-		else[m
+[31m-		{[m
+[31m-			System.err.println("Keys are not same ");[m
+[31m-		}[m
+[31m-		[m
+[31m-	}[m
+[31m-[m
+[31m-}[m
+[1mdiff --git a/src/Jdk8/CompareValueOfMap.java b/src/Jdk8/CompareValueOfMap.java[m
+[1mdeleted file mode 100644[m
+[1mindex b61347b..0000000[m
+[1m--- a/src/Jdk8/CompareValueOfMap.java[m
+[1m+++ /dev/null[m
+[36m@@ -1,46 +0,0 @@[m
+[31m-package collectionPrac;[m
+[31m-[m
+[31m-import java.util.ArrayList;[m
+[31m-import java.util.HashMap;[m
+[31m-import java.util.List;[m
+[31m-[m
+[31m-public class CompareValueOfMap {[m
+[31m-[m
+[31m-	public static void main(String[] args) {[m
+[31m-		// TODO Auto-generated method stub[m
+[31m-[m
+[31m-		HashMap<String, Integer> hm = new HashMap<>();[m
+[31m-		hm.put("A", 1);[m
+[31m-		hm.put("B", 2);[m
+[31m-		hm.put("C", 3);[m
+[31m-[m
+[31m-		HashMap<String, Integer> hm2 = new HashMap<>();[m
+[31m-		hm2.put("A", 1);[m
+[31m-		hm2.put("C", 3);[m
+[31m-		hm2.put("B", 2);[m
+[31m-[m
+[31m-		HashMap<String, Integer> hm3 = new HashMap<>();[m
+[31m-		hm3.put("A", 1);[m
+[31m-		hm3.put("C", 3);[m
+[31m-		hm3.put("B", 2);[m
+[31m-		hm3.put("D", 4);[m
+[31m-		[m
+[31m-		 List<Integer>dd=new ArrayList<>(hm.values());[m
+[31m-		 [m
+[31m-		 System.out.println("LIST "+dd);[m
+[31m-		[m
+[31m-		if( new ArrayList<>(hm.values()).equals(new ArrayList<>(hm2.values()))){[m
+[31m-		System.out.println("value are same ");[m
+[31m-		}[m
+[31m-		else {[m
+[31m-			System.out.println("not same ");[m
+[31m-		}[m
+[31m-		if( new ArrayList<>(hm.values()).equals(new ArrayList<>(hm3.values()))){[m
+[31m-			System.out.println("value are same ");[m
+[31m-			}[m
+[31m-			else {[m
+[31m-				System.out.println("not same ");[m
+[31m-			}[m
+[31m-	}[m
+[31m-[m
+[31m-}[m
+[1mdiff --git a/src/Jdk8/FindExtraKey.java b/src/Jdk8/FindExtraKey.java[m
+[1mdeleted file mode 100644[m
+[1mindex f32a9e2..0000000[m
+[1m--- a/src/Jdk8/FindExtraKey.java[m
+[1m+++ /dev/null[m
+[36m@@ -1,34 +0,0 @@[m
+[31m-package collectionPrac;[m
+[31m-[m
+[31m-import java.util.HashMap;[m
+[31m-import java.util.HashSet;[m
+[31m-import java.util.Set;[m
+[31m-[m
+[31m-public class FindExtraKey {[m
+[31m-[m
+[31m-	public static void main(String[] args) {[m
+[31m-		// TODO Auto-generated method stub[m
+[31m-[m
+[31m-		HashMap<String, Integer> hm = new HashMap<>();[m
+[31m-		hm.put("A", 1);[m
+[31m-		hm.put("B", 2);[m
+[31m-		hm.put("C", 3);[m
+[31m-[m
+[31m-		HashMap<String, Integer> hm3 = new HashMap<>();[m
+[31m-		hm3.put("A", 1);[m
+[31m-		hm3.put("C", 3);[m
+[31m-		hm3.put("B", 2);[m
+[31m-		hm3.put("D", 4);[m
+[31m-		[m
+[31m-		[m
+[31m-		Set<String>total= new HashSet<>(hm.keySet());[m
+[31m-		total.addAll(hm3.keySet());[m
+[31m-		total.removeAll(hm.keySet());[m
+[31m-		System.out.println("Extra key "+ total);[m
+[31m-		 [m
+[31m-		[m
+[31m-		[m
+[31m-		[m
+[31m-	}[m
+[31m-[m
+[31m-}[m
+[1mdiff --git a/src/Jdk8/FindExtraValue.java b/src/Jdk8/FindExtraValue.java[m
+[1mdeleted file mode 100644[m
+[1mindex caee3c0..0000000[m
+[1m--- a/src/Jdk8/FindExtraValue.java[m
+[1m+++ /dev/null[m
+[36m@@ -1,33 +0,0 @@[m
+[31m-package collectionPrac;[m
+[31m-[m
+[31m-import java.util.ArrayList;[m
+[31m-import java.util.HashMap;[m
+[31m-import java.util.HashSet;[m
+[31m-import java.util.Set;[m
+[31m-[m
+[31m-public class FindExtraValue {[m
+[31m-[m
+[31m-	public static void main(String[] args) {[m
+[31m-		// TODO Auto-generated method stub[m
+[31m-[m
+[31m-		HashMap<String, Integer> hm = new HashMap<>();[m
+[31m-		hm.put("A", 1);[m
+[31m-		hm.put("B", 2);[m
+[31m-		hm.put("C", 3);[m
+[31m-[m
+[31m-		HashMap<String, Integer> hm3 = new HashMap<>();[m
+[31m-		hm3.put("A", 1);[m
+[31m-		hm3.put("C", 3);[m
+[31m-		hm3.put("B", 2);[m
+[31m-		hm3.put("D", 4);[m
+[31m-		[m
+[31m-		     ArrayList<Integer> total=new ArrayList<>(hm.values());[m
+[31m-		     total.addAll(new ArrayList<>(hm3.values()));[m
+[31m-		     total.removeAll(new ArrayList<>(hm.values()));[m
+[31m-		     System.out.println("Extra value"+total);[m
+[31m-		[m
+[31m-		[m
+[31m-		[m
+[31m-	}[m
+[31m-[m
+[31m-}[m
+[1mdiff --git a/src/Jdk8/Stream.java b/src/Jdk8/Stream.java[m
+[1mdeleted file mode 100644[m
+[1mindex 98a9343..0000000[m
+[1m--- a/src/Jdk8/Stream.java[m
+[1m+++ /dev/null[m
+[36m@@ -1,26 +0,0 @@[m
+[31m-package Jdk8;[m
+[31m-[m
+[31m-import java.util.ArrayList;[m
+[31m-import java.util.Arrays;[m
+[31m-import java.util.List;[m
+[31m-import java.util.stream.Collectors;[m
+[31m-[m
+[31m-public class Stream {[m
+[31m-[m
+[31m-	public static void main(String[] args) {[m
+[31m-[m
+[31m-		List<String>com= new ArrayList<String>(Arrays.asList("TCS","CTS","HCL","Wipro","Infy","SAP"));[m
+[31m-[m
+[31m-		//we ness the a list of data  which contain compnay name lenght should be 3 by using java stream[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-		List<String>dd=com.stream().filter(x->x.equals(x.length()==3)).collect(Collectors.toList());[m
+[31m-		 System.out.println(dd);[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-	}[m
+[31m-[m
+[31m-}[m
+[1mdiff --git a/src/Jdk8/comaprecollections.java b/src/Jdk8/comaprecollections.java[m
+[1mdeleted file mode 100644[m
+[1mindex d713dcc..0000000[m
+[1m--- a/src/Jdk8/comaprecollections.java[m
+[1m+++ /dev/null[m
+[36m@@ -1,39 +0,0 @@[m
+[31m-package collectionPrac;[m
+[31m-[m
+[31m-import java.util.HashMap;[m
+[31m-[m
+[31m-public class comaprecollections {[m
+[31m-[m
+[31m-	public static void main(String[] args) {[m
+[31m-		// TODO Auto-generated method stub[m
+[31m-[m
+[31m-		HashMap<String, Integer> hm = new HashMap<>();[m
+[31m-		hm.put("A", 1);[m
+[31m-		hm.put("B", 2);[m
+[31m-		hm.put("C", 3);[m
+[31m-[m
+[31m-		HashMap<String, Integer> hm2 = new HashMap<>();[m
+[31m-		hm2.put("A", 1);[m
+[31m-		hm2.put("C", 3);[m
+[31m-		hm2.put("B", 2);[m
+[31m-[m
+[31m-		HashMap<String, Integer> hm3 = new HashMap<>();[m
+[31m-		hm3.put("A", 1);[m
+[31m-		hm3.put("C", 3);[m
+[31m-		hm3.put("B", 2);[m
+[31m-		hm3.put("D", 4);[m
+[31m-		if (hm.equals(hm2)) {[m
+[31m-[m
+[31m-			System.out.println("collection are same");[m
+[31m-		} else {[m
+[31m-			System.out.println("not same");[m
+[31m-		}[m
+[31m-		if (hm.equals(hm3)) {[m
+[31m-[m
+[31m-			System.out.println("collection are same");[m
+[31m-		} else {[m
+[31m-			System.err.println("Keys are not same ");[m
+[31m-		}[m
+[31m-	}[m
+[31m-[m
+[31m-}[m
